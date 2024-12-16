@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
         System.out.println("Задача № 1");
         byte clientOS = 1;
         if (clientOS == 0) {
@@ -13,25 +12,25 @@ public class Main {
         short clientDeviceYear = 2011;
         if (clientOS == 0 && clientDeviceYear > 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке.");
-        } else if (clientOS == 0 && clientDeviceYear < 2015)
+        } else if (clientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        }
         if (clientOS == 1 && clientDeviceYear > 2015) {
             System.out.println("Установите версию приложения для Android по ссылке.");
-        } else if (clientOS == 1 && clientDeviceYear < 2015)
+        } else if (clientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        }
 
         System.out.println("Задача № 3");
-        int year = 1939;
-
-        if (year > 1584) if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        int year = 1500;
+        if (year < 1584) {
+            System.out.println("Год должен быть больше 1584.");
+        } else if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
             System.out.println(year + " год является високосным.");
         } else {
             System.out.println(year + " год не является високосным.");
         }
-        else {
-            System.out.println("Год должен быть больше 1584.");
 
-        }
 
         System.out.println("Задача № 4");
         byte deliveryDistance = 95;
@@ -90,11 +89,12 @@ public class Main {
                 break;
             default:
                 System.out.println("Такого месяца нет.");
-
         }
 
     }
+
 }
+
 
 
 
